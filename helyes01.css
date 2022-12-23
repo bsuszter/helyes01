@@ -1,0 +1,197 @@
+/* reszponzivitás */
+@media only screen and (max-width: 400px) {
+	.keret{
+        height: 500px;
+    }
+
+    .szavak1, .szavak2, .szavak3, .szavak4{
+        width: 120px!important;
+        font-size: 14px!important;
+    }
+
+}
+
+.keret{
+    width: 80%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #E94A3E;
+    /* background-color: #EBA63F; */
+    display: flex;  
+    flex-direction: column; 
+    flex-wrap: wrap;
+    border-radius: 15px;
+}
+
+.also{
+    background-color: #39A2B8;
+    /* background-color: #438945; */
+    border-radius: 0 0 15px 15px;
+}
+
+.felso{
+    background-color: #CDD629;
+    /* background-color: #3CBCC3; */
+    margin-top: 15px;
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+    padding-top: 10px;
+}
+
+.kozepso{
+    display: flex;
+    flex-direction: column;
+    background-color: #CDD629;
+    /* background-color: #3CBCC3; */
+    min-height: 190px;
+
+}
+
+.mondat{
+    width: 90%;
+    margin-top: 30px;
+    background-color: #B2B2B2;
+    background-color: #F7F4E9; 
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 1px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.megoldas{
+    background-color: #B2B2B2;
+   /*  background-color: #EBA63F; */
+    width: 150px;
+    height: 30px;
+    border: solid 1px;
+    text-align: center;
+    font-size: 18px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+}
+
+.helyesvalasz{
+    text-align: center;
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.szavak{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+
+}
+
+
+.felso, .kozepso, .also{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 96%;
+}
+
+
+.szavak1, .szavak2, .szavak3, .szavak4{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 1px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    font-size: 20px;
+    background-color: #F7F4E9;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+.gombok{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#indit, #ellenoriz {
+    cursor: pointer;
+    margin-top: 20px;
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+}
+
+#ujra {
+    background-color:  #f55858;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 150px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+#indit {
+    background-color: #39A2B8;
+    /* background-color:  #3CBCC3; */
+}
+
+
+#ellenoriz{
+    background-color: #CDD629;
+    /* background-color:  #e2e049; */
+}
+
+#kep{
+    max-height: 90px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+
+}
+
+.vegeredmeny{
+    text-align: center;
+}
+
+.progress-bar{
+    margin-bottom: 2px;
+    width: 100%;
+}
+
+/* The alert message box */
+.alert {
+    padding: 20px;
+    background-color: #17A2B8;
+    color: white;
+    margin-bottom: 15px;
+    width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+  }
+
+    /* When moving the mouse over the close button */
+    .closebtn:hover {
+        color: black;
+      }
+    
+      .myChart{
+        width:100%;
+        max-width:300px;
+        color: white;
+        margin-left: auto;
+        margin-right: auto;
+      }
