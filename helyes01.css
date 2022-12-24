@@ -4,9 +4,9 @@
         height: 500px;
     }
 
-    .szavak1, .szavak2, .szavak3, .szavak4{
+    .szavak1, .szavak3 {
         width: 120px!important;
-        font-size: 14px!important;
+        font-size: 30px!important;
     }
 
 }
@@ -49,7 +49,7 @@
 }
 
 .mondat{
-    width: 60%;
+    width: 75%;
     margin-top: 30px;
     background-color: #B2B2B2;
     background-color: #F7F4E9; 
@@ -109,7 +109,8 @@
     margin-top: 10px;
     margin-bottom: 10px;
     width: 200px;
-    font-size: 20px;
+    height: 80px;
+    font-size: 40px;
     background-color: #F7F4E9;
     cursor: pointer;
     text-align: center;
@@ -118,7 +119,7 @@
 
 .gombok{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
@@ -126,6 +127,8 @@
 
 #indit, #ellenoriz {
     cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 20px;
     width: 150px;
     height: 40px;
@@ -143,13 +146,12 @@
 
 #indit {
     background-color: #FB8604;
-    /* background-color:  #3CBCC3; */
 }
 
 
 #ellenoriz{
-    background-color: #FB8604;
-    /* background-color:  #e2e049; */
+    background-color: #073b19;
+    color: white;
 }
 
 #kep{
@@ -170,6 +172,7 @@
 .progress-bar{
     margin-bottom: 2px;
     width: 100%;
+    background-color: #073b19;
 }
 
 /* The alert message box */

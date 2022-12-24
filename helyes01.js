@@ -6,7 +6,6 @@ document.getElementById("megoldas").style.visibility = "hidden";
 document.getElementById("helyesvalasz").style.visibility = "hidden";
 document.getElementById("mondat").style.visibility = "hidden";
 document.getElementById("szavak1").style.visibility = "hidden";
-//document.getElementById("szavak2").style.visibility = "hidden";
 document.getElementById("szavak3").style.visibility = "hidden";
 //document.getElementById("szavak4").style.visibility = "hidden";
 document.getElementById("veletlen").style.visibility = "hidden";
@@ -72,25 +71,20 @@ function indit(){
     document.getElementById("valasz1").innerHTML = "";
 
     document.getElementById("szavak1").disabled = false;
-    //document.getElementById("szavak2").disabled = false;
     document.getElementById("szavak3").disabled = false;
-    //document.getElementById("szavak4").disabled = false;
 
 
     document.getElementById("szavak1").style.backgroundColor = "";
-    //document.getElementById("szavak2").style.backgroundColor = "";
     document.getElementById("szavak3").style.backgroundColor = "";
-    //document.getElementById("szavak4").style.backgroundColor = "";
 
-    //document.getElementById("felso").innerHTML =  szavaklong +" / " + kerdesszam + " ( helyes válaszok: " + jovalasz + " / rossz válaszok: " + rosszvalasz + " )";
-    //document.getElementById("megoldas").style.visibility = "visible";
+
     document.getElementById("helyesvalasz").style.visibility = "hidden";
     document.getElementById("mondat").style.visibility = "visible";
     document.getElementById("szavak1").style.visibility = "visible";
-    //document.getElementById("szavak2").style.visibility = "visible";
     document.getElementById("szavak3").style.visibility = "visible";
-    //document.getElementById("szavak4").style.visibility = "visible";
-    document.getElementById("indit").style.display = "none";
+    document.getElementById("indit").style.display = "block";
+    document.getElementById("indit").style.visibility = "hidden";
+
 
 
     document.getElementById("megoldas").style.backgroundColor = "#EBA63F";
@@ -104,9 +98,7 @@ function indit(){
         document.getElementById("szöveg2").innerHTML = szavak[element_array[sorszam]][1];
 
         document.getElementById("szavak1").value = szavak[element_array[sorszam]][2];
-        /* document.getElementById("szavak2").value = szavak[element_array[sorszam]][2];  */
         document.getElementById("szavak3").value = szavak[element_array[sorszam]][3]; 
-        /* document.getElementById("szavak4").value = szavak[element_array[sorszam]][4];  */
         document.getElementById("kep").src = szavak[element_array[sorszam]][5];    
         sorszam += 1;
     } else 
@@ -117,16 +109,13 @@ function indit(){
         document.getElementById("helyesvalasz").style.visibility = "hidden";
         document.getElementById("mondat").style.visibility = "hidden";
         document.getElementById("szavak1").style.visibility = "hidden";
-        //document.getElementById("szavak2").style.visibility = "hidden";
         document.getElementById("szavak3").style.visibility = "hidden";
-        //document.getElementById("szavak4").style.visibility = "hidden";
         document.getElementById("ellenoriz").style.display = "none";
         document.getElementById("ujra").style.display = "block";
         document.getElementById("felso").style.visibility = "hidden";
         document.getElementById("kep").style.visibility = "hidden";
         document.getElementById("indit").style.display = "none";
-        //document.getElementById("vegeredmeny").innerHTML =  "helyes válaszok: " + jovalasz + " / rossz válaszok: " + rosszvalasz; 
-            
+           
         document.getElementById("szavak").style.display = "none";
         document.getElementById("kozepso").style.display = "none";
         
@@ -184,6 +173,7 @@ function ellenoriz(){
 
     document.getElementById("indit").style.display = "none";
     document.getElementById("ellenoriz").style.display = "block";
+
     //a véletlenül generált szám átemelése ide
     var sorszam = document.getElementById("veletlen").innerHTML;
     //
@@ -191,7 +181,7 @@ function ellenoriz(){
     var helyesvalasz =  document.getElementById("helyesvalasz").innerHTML;
     var vizsgal = szavak[sorszam][4];
     var helyesszo = szavak[sorszam][vizsgal]
-     console.log("sorszám: ",sorszam);
+    console.log("sorszám: ",sorszam);
     console.log("válasz: ",valaszolo);
     console.log("vizsgál:",vizsgal);
     console.log("helyesszó: ",helyesszo); 
@@ -205,23 +195,9 @@ function ellenoriz(){
         } else {
             document.getElementById("szavak1").style.backgroundColor = "red";
             rosszvalasz += 1;
-/*             document.getElementById("helyesvalasz").style.visibility = "visible";
-            document.getElementById("helyesvalasz").innerHTML = "A helyes válasz: "+helyesszo; */
         }     
     }
 
-/*     if (document.getElementById("szavak2").style.backgroundColor == "yellow") {
-        if (valaszolo == helyesszo) {
-            jovalasz += 1;
-            console.log("helyes");
-            document.getElementById("szavak2").style.backgroundColor = "#89ef75";
-        } else {
-            document.getElementById("szavak2").style.backgroundColor = "red";
-            rosszvalasz += 1;
-            document.getElementById("helyesvalasz").style.visibility = "visible";
-            document.getElementById("helyesvalasz").innerHTML = "A helyes válasz: "+helyesszo;
-        }     
-    } */
 
     if (document.getElementById("szavak3").style.backgroundColor == "yellow") {
         if (valaszolo == helyesszo) {
@@ -231,39 +207,16 @@ function ellenoriz(){
         } else {
             document.getElementById("szavak3").style.backgroundColor = "red";
             rosszvalasz += 1;
-/*             document.getElementById("helyesvalasz").style.visibility = "visible";
-            document.getElementById("helyesvalasz").innerHTML = "A helyes válasz: "+helyesszo; */
         }     
     }
-
-/*     if (document.getElementById("szavak4").style.backgroundColor == "yellow") {
-        if (valaszolo == helyesszo) {
-            jovalasz += 1;
-            console.log("helyes");
-            document.getElementById("szavak4").style.backgroundColor = "#89ef75";
-        } else {
-            document.getElementById("szavak4").style.backgroundColor = "red";
-            rosszvalasz += 1;
-            document.getElementById("helyesvalasz").style.visibility = "visible";
-            document.getElementById("helyesvalasz").innerHTML = "A helyes válasz: "+helyesszo;
-        }     
-    } */
-
-
-
-    //document.getElementById("felso").innerHTML =  szavaklong +"/" + kerdesszam + " ( helyes válaszok: " + jovalasz +  " / rossz válaszok: " + rosszvalasz + " )";
-    document.getElementById("indit").style.display = "block";
     
-
+    document.getElementById("indit").style.display = "block";
+    document.getElementById("indit").style.visibility = "visible";
     document.getElementById("ellenoriz").style.display = "none";
 
     document.getElementById("mondat").innerHTML = "A helyes írásmód: "+szavak[sorszam][6];
-
-
     document.getElementById("szavak1").disabled = true;
- //   document.getElementById("szavak2").disabled = true;
     document.getElementById("szavak3").disabled = true;
- //   document.getElementById("szavak4").disabled = true;
 }
 
 
@@ -281,20 +234,11 @@ function szavak_1(){
     document.getElementById("valasz1").innerHTML = szavak[sorszam][2];
 
     document.getElementById("szavak1").style.backgroundColor = "yellow";
- //   document.getElementById("szavak2").style.backgroundColor = "";
     document.getElementById("szavak3").style.backgroundColor = "";
- //   document.getElementById("szavak4").style.backgroundColor = "";
+    document.getElementById("indit").style.display = "none";
     document.getElementById("ellenoriz").style.display = "block";
 }
 
-function szavak_2(){
-    document.getElementById("megoldas").innerHTML = document.getElementById("szavak2").value;
-    document.getElementById("szavak1").style.backgroundColor = "";
-//    document.getElementById("szavak2").style.backgroundColor = "yellow";
-    document.getElementById("szavak3").style.backgroundColor = "";
- //   document.getElementById("szavak4").style.backgroundColor = "";
-    document.getElementById("ellenoriz").style.display = "block";
-}
 
 function szavak_3(){
     var sorszam = document.getElementById("veletlen").innerHTML;
@@ -305,17 +249,7 @@ function szavak_3(){
     document.getElementById("valasz1").innerHTML = szavak[sorszam][3];
 
     document.getElementById("szavak1").style.backgroundColor = "";
- //   document.getElementById("szavak2").style.backgroundColor = "";
     document.getElementById("szavak3").style.backgroundColor = "yellow";
-//    document.getElementById("szavak4").style.backgroundColor = "";
-    document.getElementById("ellenoriz").style.display = "block";
-}
-
-function szavak_4(){
-    document.getElementById("megoldas").innerHTML = document.getElementById("szavak4").value;
-    document.getElementById("szavak1").style.backgroundColor = "";
- //   document.getElementById("szavak2").style.backgroundColor = "";
-    document.getElementById("szavak3").style.backgroundColor = "";
- //   document.getElementById("szavak4").style.backgroundColor = "yellow";
+    document.getElementById("indit").style.display = "none";
     document.getElementById("ellenoriz").style.display = "block";
 }
