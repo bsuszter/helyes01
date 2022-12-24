@@ -10,6 +10,7 @@ document.getElementById("szavak3").style.visibility = "hidden";
 //document.getElementById("szavak4").style.visibility = "hidden";
 document.getElementById("veletlen").style.visibility = "hidden";
 document.getElementById("alertbox").style.display = "none"; 
+document.getElementById("gyakorlo_feladat").style.display = "none"; 
 
 szavak = [
     ["kö","eny","p","pp",2,"https://cdn.pixabay.com/photo/2019/09/25/11/56/power-4503462_960_720.jpg","köpeny"],
@@ -217,6 +218,8 @@ function ellenoriz(){
     document.getElementById("mondat").innerHTML = "A helyes írásmód: "+szavak[sorszam][6];
     document.getElementById("szavak1").disabled = true;
     document.getElementById("szavak3").disabled = true;
+
+    practice();
 }
 
 
@@ -252,4 +255,28 @@ function szavak_3(){
     document.getElementById("szavak3").style.backgroundColor = "yellow";
     document.getElementById("indit").style.display = "none";
     document.getElementById("ellenoriz").style.display = "block";
+}
+
+function practice(){
+    document.getElementById("kep").style.display = "none";
+    document.getElementById("gyakorlo_feladat").style.display = "block";
+    document.getElementById("gyak").focus();
+
+}
+
+function gyak_ellenoriz(){
+    var valaszolo = document.getElementById('gyak').value;
+        
+    //a véletlenül generált szám átemelése ide
+    var sorszam = document.getElementById("veletlen").innerHTML;
+    
+    var vizsgal = szavak[sorszam][6];
+    console.log(sorszam, valaszolo, vizsgal);
+
+    if (valaszolo == vizsgal) {
+        document.getElementById("gyak").style.backgroundColor = "#89ef75";
+        document.getElementById("ujra").style.display = "none";
+    } else {
+        document.getElementById("gyak").style.backgroundColor = "red";
+    }     
 }

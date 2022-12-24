@@ -1,7 +1,7 @@
 /* reszponzivitás */
 @media only screen and (max-width: 400px) {
 	.keret{
-        height: 500px;
+        height: 700px;
     }
 
     .szavak1, .szavak3 {
@@ -13,7 +13,7 @@
 
 .keret{
     width: 80%;
-    height: 500px;
+    height: 700px;
     margin-left: auto;
     margin-right: auto;
     background-color: #B86B14;
@@ -163,6 +163,15 @@
     margin-bottom: 5px;
     border-radius: 15px;
 
+}
+
+.gyakorlo_feladat{
+    background-color: #D4E0F7;
+    float: left;
+    width: 60%;
+    height: 200px;
+    margin-left: 20%;
+    text-align: center;
 }
 
 .vegeredmeny{
