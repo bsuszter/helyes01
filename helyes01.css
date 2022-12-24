@@ -9,6 +9,22 @@
         font-size: 30px!important;
     }
 
+    .szöveg, .example-dropzone{
+        width: 70px!important;
+        height: 40px!important;
+        font-size: 20px!important;
+    }
+
+    .gyak{
+        width: 170px!important;
+        height: 30px!important;
+        font-size: 20px!important;
+    }
+
+    .gyakorlo_feladat{
+        height: 250px!important;
+    }
+
 }
 
 .keret{
@@ -228,7 +244,7 @@
       }
       
       .szöveg{
-        font-size: 38px;
+        font-size: 30px;
         text-align: center;
         background-color: #FB8604;
         border: 2px solid #342009;

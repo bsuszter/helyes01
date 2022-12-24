@@ -18,6 +18,9 @@ szavak = [
     ["utá","a","n","nn",2,"https://cdn.pixabay.com/photo/2016/10/16/00/36/one-against-all-1744091_960_720.jpg","utána"],
     ["ki","ebb","s","ss",2,"https://cdn.pixabay.com/photo/2017/07/23/13/57/friends-2531455_960_720.jpg","kisebb"],
     ["to","al","l","ll",3,"https://cdn.pixabay.com/photo/2016/11/22/23/09/fountain-pen-1851096_960_720.jpg","tollal"],
+    ["szégye","i","l","ll",3,"https://cdn.pixabay.com/photo/2019/09/17/10/44/monkey-4483162_960_720.jpg","szégyelli"],
+    ["ját","ál","sz","ssz",3,"https://cdn.pixabay.com/photo/2013/04/12/06/03/darts-102919_960_720.jpg","játsszál"],
+    ["sza","ag","l","ll",2,"https://cdn.pixabay.com/photo/2014/11/27/22/44/gift-548296_960_720.jpg","szalag"],
 ]
 
 var jovalasz = 0;
@@ -272,7 +275,7 @@ function practice(){
     document.getElementById("gyak").value = "";
     document.getElementById("gyak").style.textAlign = "center";
     document.getElementById("gyak").style.fontSize = "28px";
-
+    document.getElementById("gyak").style.backgroundColor = "white";
     document.getElementById("gyak").focus();
 
 }
