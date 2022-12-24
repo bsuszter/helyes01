@@ -7,7 +7,7 @@
     <title>Document</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="teszt.css">
+    <link rel="stylesheet" href="helyes01.css">
         <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -24,17 +24,32 @@
             </div>
         </div>
 
+     
+            <div id="dropzone" class="dropzone">
+              <div class="megold">
+                  <div id="szöveg1" class="szöveg">
+                      <p></p> 
+                  </div>
+                  <div id="valasz1" class="example-dropzone">
+                    <div id="allatnev"> </div>
+                  </div>
+                  <div id="szöveg2" class="szöveg">
+                      <p></p> 
+                  </div>
+              </div>
+            </div>
+
         <!--  Eredmény alert -->
         <div id="alertbox" class="alert">
-            <span id="eredmeny_kiiras"></span>
+            <span id="eredmeny_kiiras"></span> 
             <!-- kördiagram az eredményeknek -->
-            <canvas id="myChart" class="myChart"></canvas>
+             <canvas id="myChart" class="myChart"></canvas>
             <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>      
-        </div> 
+        </div>  
 
         <div id="kozepso" class="kozepso">
             <div id="mondat" class="mondat" value="mondat">
-                Ide kerül a mondat.
+                ___
             </div>
             <div class="kep">
                 <img id="kep" src="" alt="">
@@ -52,12 +67,12 @@
             <div id="szavak" class="szavak">
                 <div class="szavak_bal">
                     <input id="szavak1" class="szavak1" type="button" value="" onclick="szavak_1()">
-                    <input id="szavak2" class="szavak2" type="button" value="" onclick="szavak_2()">
+                    <!-- <input id="szavak2" class="szavak2" type="button" value="" onclick="szavak_2()"> -->
                    
                 </div>
                 <div class=szavak_jobb>
                     <input id="szavak3" class="szavak3" type="button" value="" onclick="szavak_3()">
-                    <input id="szavak4" class="szavak4" type="button" value="" onclick="szavak_4()">
+                   <!--  <input id="szavak4" class="szavak4" type="button" value="" onclick="szavak_4()"> -->
                 </div>
             </div>
 
@@ -83,6 +98,6 @@
         </div>
     </div>
 
-    <script src="teszt.js"></script>
+    <script src="helyes01.js"></script>
 </body>
 </html>   

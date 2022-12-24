@@ -16,7 +16,7 @@
     height: 500px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #E94A3E;
+    background-color: #B86B14;
     /* background-color: #EBA63F; */
     display: flex;  
     flex-direction: column; 
@@ -25,13 +25,13 @@
 }
 
 .also{
-    background-color: #39A2B8;
+    background-color: #B86B14;
     /* background-color: #438945; */
     border-radius: 0 0 15px 15px;
 }
 
 .felso{
-    background-color: #CDD629;
+    background-color: #B86B14;
     /* background-color: #3CBCC3; */
     margin-top: 15px;
     text-align: center;
@@ -42,14 +42,14 @@
 .kozepso{
     display: flex;
     flex-direction: column;
-    background-color: #CDD629;
+    background-color: #B86B14;
     /* background-color: #3CBCC3; */
     min-height: 190px;
 
 }
 
 .mondat{
-    width: 90%;
+    width: 60%;
     margin-top: 30px;
     background-color: #B2B2B2;
     background-color: #F7F4E9; 
@@ -142,13 +142,13 @@
 }
 
 #indit {
-    background-color: #39A2B8;
+    background-color: #FB8604;
     /* background-color:  #3CBCC3; */
 }
 
 
 #ellenoriz{
-    background-color: #CDD629;
+    background-color: #FB8604;
     /* background-color:  #e2e049; */
 }
 
@@ -175,7 +175,7 @@
 /* The alert message box */
 .alert {
     padding: 20px;
-    background-color: #17A2B8;
+    background-color: #342009;
     color: white;
     margin-bottom: 15px;
     width: 80%;
@@ -194,4 +194,47 @@
         color: white;
         margin-left: auto;
         margin-right: auto;
+      }
+
+
+      .dropzone{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        padding: 10px;
+      }
+    
+      .megold {
+        display: flex;
+        flex-direction: row;
+        
+      }
+      
+      .szöveg{
+        font-size: 38px;
+        text-align: center;
+        background-color: #FB8604;
+        border: 2px solid #342009;
+        height: 70px;
+        width: 100px;
+      }
+      
+      .szöveg p{
+        margin: 0;
+        text-align: center;
+        padding: 13px 0 0 0; 
+      }
+
+      .example-dropzone {
+        font-size: 38px;
+        color: #D4E0F7;
+        text-align: center;
+        background-color: #342009;
+        border: 2px solid #FB8604;
+        height: 70px;
+        width: 100px;
+        margin-left: 5px;
+        margin-right: 5px;
       }
