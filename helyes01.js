@@ -54,12 +54,18 @@ var i = 0;
     }
 
 var sorszam = 0;
-console.log(element_array);
 
 function indit(){
+    document.getElementById("kep").style.display = "block";
+    document.getElementById("szavak1").style.display = "block";
+    document.getElementById("szavak3").style.display = "block";
+    document.getElementById("gyakorlo_feladat").style.display = "none";
+    //a válaszdoboz színének alaphelyzetbe állítása
+    document.getElementById("valasz1").style.backgroundColor = "#342009";
+    document.getElementById("valasz1").style.color = "#D4E0F7";
+
     kerdesszam += 1;
     let viszonyszam = 100 / szavaklong;
-    console.log("viszony" + viszonyszam);
     // progress bar programozása a kérdések számának jelöléséhez
     let $progressBar = $('.progress-bar');
     $progressBar.text(kerdesszam);
@@ -70,6 +76,7 @@ function indit(){
     //"képernyőtörlés"
     document.getElementById("mondat").innerHTML = "___";
     document.getElementById("valasz1").innerHTML = "";
+
 
     document.getElementById("szavak1").disabled = false;
     document.getElementById("szavak3").disabled = false;
@@ -83,7 +90,7 @@ function indit(){
     document.getElementById("mondat").style.visibility = "visible";
     document.getElementById("szavak1").style.visibility = "visible";
     document.getElementById("szavak3").style.visibility = "visible";
-    document.getElementById("indit").style.display = "block";
+    document.getElementById("indit").style.display = "none";
     document.getElementById("indit").style.visibility = "hidden";
 
 
@@ -165,7 +172,6 @@ function indit(){
         });
     
     }
-    console.log(sorszam);
 
 
 }
@@ -182,19 +188,18 @@ function ellenoriz(){
     var helyesvalasz =  document.getElementById("helyesvalasz").innerHTML;
     var vizsgal = szavak[sorszam][4];
     var helyesszo = szavak[sorszam][vizsgal]
-    console.log("sorszám: ",sorszam);
-    console.log("válasz: ",valaszolo);
-    console.log("vizsgál:",vizsgal);
-    console.log("helyesszó: ",helyesszo); 
     
 
     if (document.getElementById("szavak1").style.backgroundColor == "yellow") {
         if (valaszolo == helyesszo) {
             jovalasz += 1;
-            console.log("helyes");
-            document.getElementById("szavak1").style.backgroundColor = "#89ef75";
+            /* document.getElementById("szavak1").style.backgroundColor = "#89ef75"; */
+            document.getElementById("valasz1").style.backgroundColor = "#89ef75";
+            document.getElementById("valasz1").style.color = "#073b19";
+
         } else {
-            document.getElementById("szavak1").style.backgroundColor = "red";
+            /* document.getElementById("szavak1").style.backgroundColor = "red"; */
+            document.getElementById("valasz1").style.backgroundColor = "red";
             rosszvalasz += 1;
         }     
     }
@@ -203,15 +208,17 @@ function ellenoriz(){
     if (document.getElementById("szavak3").style.backgroundColor == "yellow") {
         if (valaszolo == helyesszo) {
             jovalasz += 1;
-            console.log("helyes");
-            document.getElementById("szavak3").style.backgroundColor = "#89ef75";
+            /* document.getElementById("szavak3").style.backgroundColor = "#89ef75"; */
+            document.getElementById("valasz1").style.backgroundColor = "#89ef75";
+            document.getElementById("valasz1").style.color = "#073b19";
         } else {
-            document.getElementById("szavak3").style.backgroundColor = "red";
+            /* document.getElementById("szavak3").style.backgroundColor = "red"; */
+            document.getElementById("valasz1").style.backgroundColor = "red";
             rosszvalasz += 1;
         }     
     }
     
-    document.getElementById("indit").style.display = "block";
+    document.getElementById("indit").style.display = "none";
     document.getElementById("indit").style.visibility = "visible";
     document.getElementById("ellenoriz").style.display = "none";
 
@@ -253,13 +260,19 @@ function szavak_3(){
 
     document.getElementById("szavak1").style.backgroundColor = "";
     document.getElementById("szavak3").style.backgroundColor = "yellow";
-    document.getElementById("indit").style.display = "none";
     document.getElementById("ellenoriz").style.display = "block";
 }
 
 function practice(){
     document.getElementById("kep").style.display = "none";
+    document.getElementById("szavak1").style.display = "none";
+    document.getElementById("szavak3").style.display = "none";
     document.getElementById("gyakorlo_feladat").style.display = "block";
+    document.getElementById("gyak_ellenoriz").style.visibility = "visible";
+    document.getElementById("gyak").value = "";
+    document.getElementById("gyak").style.textAlign = "center";
+    document.getElementById("gyak").style.fontSize = "28px";
+
     document.getElementById("gyak").focus();
 
 }
@@ -271,11 +284,13 @@ function gyak_ellenoriz(){
     var sorszam = document.getElementById("veletlen").innerHTML;
     
     var vizsgal = szavak[sorszam][6];
-    console.log(sorszam, valaszolo, vizsgal);
 
     if (valaszolo == vizsgal) {
         document.getElementById("gyak").style.backgroundColor = "#89ef75";
         document.getElementById("ujra").style.display = "none";
+        document.getElementById("indit").style.display = "block";
+        document.getElementById("gyak_ellenoriz").style.visibility = "hidden";
+
     } else {
         document.getElementById("gyak").style.backgroundColor = "red";
     }     

@@ -56,12 +56,13 @@
             </div>
 
             <div class="gyakorlo_feladat" id="gyakorlo_feladat">
-                Másold le helyesen az előbb gyakorolt szót!
+                <b>Másold le helyesen az előbb gyakorolt szót!</b><br/><br/>
+                Helyes megoldás esetén léphetsz tovább.
                 <br/><br/>
-                <input id="gyak" class="gyak" type="text" value="" onclick="" autofocus="true">
+                <input id="gyak" class="gyak" type="text" value="" onclick="" autofocus="true" autocomplete="off">
                 <br/><br/>
                 <input id="gyak_ellenoriz" type="button" value="Ellenőrzés" onclick="gyak_ellenoriz()">
-                <input id="gyak_ujra" type="button" value="Új szó" onclick="gyak_ellenoriz()">
+                <!-- <input id="gyak_ujra" type="button" value="Új szó" onclick="indit()"> -->
 
             </div>
 
@@ -86,28 +87,32 @@
                 </div>
             </div>
 
-        </div>
-        <div class="gombok">
-            <div class="indit">
-                <input id="indit" type="button" value="Új feladat" onclick="indit()">
+            <div class="gombok">
+                <div class="indit">
+                    <input id="indit" type="button" value="Új feladat" onclick="indit()">
+                </div>
+                <div class="ellenoriz">
+                    <input id="ellenoriz" type="button" value="Ellenőrzés" onclick="ellenoriz()">
+                </div>
+                <div class="ujra">
+                    <input id="ujra" type="button" value="Újra" onclick="ujra()">
+                </div>
+        
             </div>
-            <div class="ellenoriz">
-                <input id="ellenoriz" type="button" value="Ellenőrzés" onclick="ellenoriz()">
+        
+            <div id="veletlen">
+        
             </div>
-            <div class="ujra">
-                <input id="ujra" type="button" value="Újra" onclick="ujra()">
+        
+            <div id="megoldas" class="megoldas" value="">
+                megoldás
             </div>
-
         </div>
 
-        <div id="veletlen">
-
-        </div>
-
-        <div id="megoldas" class="megoldas" value="">
-            megoldás
-        </div>
+        
+       
     </div>
+
 
     <script src="helyes01.js"></script>
 </body>

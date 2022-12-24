@@ -1,7 +1,7 @@
 /* reszponzivitás */
 @media only screen and (max-width: 400px) {
 	.keret{
-        height: 700px;
+        height: 600px;
     }
 
     .szavak1, .szavak3 {
@@ -13,7 +13,7 @@
 
 .keret{
     width: 80%;
-    height: 700px;
+    height: 550px;
     margin-left: auto;
     margin-right: auto;
     background-color: #B86B14;
@@ -120,7 +120,10 @@
 .gombok{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
     justify-content: center;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
 }
@@ -169,7 +172,7 @@
     background-color: #D4E0F7;
     float: left;
     width: 60%;
-    height: 200px;
+    height: 210px;
     margin-left: 20%;
     text-align: center;
 }
