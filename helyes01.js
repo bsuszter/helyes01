@@ -7,7 +7,6 @@ document.getElementById("helyesvalasz").style.visibility = "hidden";
 document.getElementById("mondat").style.visibility = "hidden";
 document.getElementById("szavak1").style.visibility = "hidden";
 document.getElementById("szavak3").style.visibility = "hidden";
-//document.getElementById("szavak4").style.visibility = "hidden";
 document.getElementById("veletlen").style.visibility = "hidden";
 document.getElementById("alertbox").style.display = "none"; 
 document.getElementById("gyakorlo_feladat").style.display = "none"; 
@@ -21,6 +20,26 @@ szavak = [
     ["szégye","i","l","ll",3,"https://cdn.pixabay.com/photo/2019/09/17/10/44/monkey-4483162_960_720.jpg","szégyelli"],
     ["ját","ál","sz","ssz",3,"https://cdn.pixabay.com/photo/2013/04/12/06/03/darts-102919_960_720.jpg","játsszál"],
     ["sza","ag","l","ll",2,"https://cdn.pixabay.com/photo/2014/11/27/22/44/gift-548296_960_720.jpg","szalag"],
+    ["mú","ik","l","ll",2,"https://cdn.pixabay.com/photo/2016/09/29/09/59/clock-1702513_960_720.jpg","múlik"],
+    ["má","ik","l","ll",3,"https://cdn.pixabay.com/photo/2015/09/07/06/49/frame-928204_960_720.jpg","mállik"],
+    ["csa","án","l","ll",2,"https://cdn.pixabay.com/photo/2020/07/07/11/54/nettle-nettles-5380256_960_720.png","csalán"],
+    ["ko","ektor","n","nn",3,"https://cdn.pixabay.com/photo/2016/03/31/18/51/socket-1294688_960_720.png","konnektor"],
+    ["fu","ánk","l","ll",3,"https://cdn.pixabay.com/photo/2020/02/01/15/50/wasp-4810610_960_720.png","fullánk"],
+    ["szalo","a","n","nn",3,"https://cdn.pixabay.com/photo/2014/12/21/23/25/bacon-575334_960_720.png","szalonna"],
+    ["te","ik","l","ll",2,"https://cdn.pixabay.com/photo/2012/04/14/14/04/hourglass-34048_960_720.png","telik"],
+    ["uzso","a","n","nn",3,"https://cdn.pixabay.com/photo/2019/04/26/19/07/pizza-4158348_960_720.png","uzsonna"],
+    ["istá","ó","l","ll",3,"https://cdn.pixabay.com/photo/2012/04/30/09/58/animals-44571_960_720.png","istálló"],
+    ["sző","ő","l","ll",2,"https://cdn.pixabay.com/photo/2017/08/18/19/48/grapes-2656259_960_720.jpg","szőlő"],
+    ["óra","or","k","kk",2,"https://cdn.pixabay.com/photo/2016/11/29/13/39/analog-watch-1869928_960_720.jpg","órakor"],
+    ["u","nyi","j","jj",3,"https://cdn.pixabay.com/photo/2017/06/18/18/39/baby-2416718_960_720.jpg","ujjnyi"],
+    ["lő","ön","j","jj",2,"https://cdn.pixabay.com/photo/2020/12/27/14/23/boy-5864153_960_720.jpg","lőjön"],
+    ["e","éle","f","ff",3,"https://cdn.pixabay.com/photo/2016/12/21/13/59/hand-1923005_960_720.png","efféle"],
+    ["ki","ebb","j","jj",3,"https://cdn.pixabay.com/photo/2016/05/21/21/52/house-1407562_960_720.jpg","kijjebb"],
+    ["le","ebb","j","jj",3,"https://cdn.pixabay.com/photo/2016/11/18/14/18/man-1834849_960_720.jpg","lejjebb"],
+    ["te","asz","r","rr",2,"https://cdn.pixabay.com/photo/2015/08/24/20/11/greece-905557_960_720.jpg","terasz"],
+    ["szí","az","j","jj",2,"https://cdn.pixabay.com/photo/2016/04/22/20/01/belt-1346453_960_720.jpg","szíjaz"],
+    ["fő","ön","j","jj",2,"https://cdn.pixabay.com/photo/2016/04/02/17/58/service-1303313_960_720.jpg","főjön"],
+    ["gu","ol","g","gg",3,"https://cdn.pixabay.com/photo/2017/12/26/02/52/kids-3039572_960_720.jpg","guggol"],
 ]
 
 var jovalasz = 0;
